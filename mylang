@@ -1,0 +1,21 @@
+algebraic_theorem:
+	'theorem' name
+	expr = expr
+	'proof'
+	expr
+		= expr [ name ]
+		...
+
+name: /[a-z_]+/
+
+expr::
+	variable
+	number
+	expr + expr
+	expr - expr
+	expr * expr
+	expr / expr
+
+variable: /[a-z]+/
+number: /[0-9]+/
+

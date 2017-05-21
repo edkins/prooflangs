@@ -1,0 +1,12 @@
+theorem difference_of_squares
+
+(a + b) * (a - b) = a * a - b * b
+
+proof
+(a + b) * (a - b)
+	= a * (a - b) + b * (a - b)		[distribl]
+	= a * (a - b) + b * (a - b)		[distribr]
+	= a * a - a * b + b * (a - b)		[distribr]
+	= a * a - a * b + a * b - b * b		[commut]
+	= a * a - b * b				[cancel]
+
